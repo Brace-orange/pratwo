@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>pratwo</title>
+    <script>
+      /* eslint-disable */
+      function rem() {
+          var w = Math.min(document.documentElement.getBoundingClientRect().width, 500);
+          document.getElementsByTagName('html')[0].style.fontSize = w * 100 / 750 + 'px';
+      }
+      rem();
+      window.onresize = function(){rem();};
+    </script>
   </head>
   <body>
     <noscript>
